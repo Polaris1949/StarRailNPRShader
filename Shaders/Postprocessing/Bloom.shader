@@ -49,7 +49,8 @@ Shader "Hidden/Honkai Star Rail/Post Processing/Bloom"
         #include "Packages/com.unity.render-pipelines.core/ShaderLibrary/FoveatedRendering.hlsl"
         #include "../Character/Shared/CharRenderingHelpers.hlsl"
 
-        float4 _BlitTexture_TexelSize;
+        // Error in Unity 6
+        // float4 _BlitTexture_TexelSize;
 
         float _BloomThreshold;
         float4 _BloomUVMinMax[MAX_MIP_DOWN_BLUR_COUNT];
